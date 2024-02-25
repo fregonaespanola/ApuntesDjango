@@ -96,3 +96,19 @@ instalar al app  "polls.apps.PollsConfig",
 y hacer las migraciones 
 
 python manage.py makemigrations polls
+
+añadir a los modelos
+
+    def __str__(self):
+        return self.choice_text
+
+crear admin 
+
+python manage.py createsuperuser
+
+en admin ponemos esto
+
+
+from .models import Question
+
+admin.site.register(Question)

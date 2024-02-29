@@ -112,3 +112,15 @@ en admin ponemos esto
 from .models import Question
 
 admin.site.register(Question)
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database examen;
+Query OK, 1 row affected (0,01 sec)
+
+mysql> create user 'examen'@'localhost' identified by '1234';
+Query OK, 0 rows affected (0,01 sec)
+
+mysql> GRANT ALL PRIVILEGES ON examen.* TO 'examen'@'localhost';
+Query OK, 0 rows affected (0,01 sec)
+
